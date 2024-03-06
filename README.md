@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+Project Setup Instructions- 
+How to run the project locally.- 
+1)git clone https://github.com/Tanisha021/Assessli_React.git    
+2)cd Assessli_React 
+3)npm start 
+4)http://localhost:3000          
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Details on the Google Sheets integration using SheetDB:
+ 1) Created a new API in dashboard:
+  Go to the SheetDB dashboard.
+  Click on the "Create API" button.
+  Select the Google Sheets file you want to connect to.
+  Choose the method (GET, POST, PUT, DELETE) and the endpoint path.
+  Click on the "Create API" button to generate the API endpoint.
 
-## Available Scripts
+2)Integrated the API endpoint in the project:
+Replace the endpoint in your project (updataGoogleSHeet function) with the SheetDB API endpoint.
+Use the appropriate method (POST in this case) to send data to the Google Sheets file.
+  
+3) Configured Google Sheets:
+  Share your Google Sheets with the email address associated with your SheetDB API key.
+  Make sure the Sheets have columns named Name, Email, Phone, and Message to match your form data.
 
-In the project directory, you can run:
+4)Submitted Data to Google Sheets:
+  When the form is submitted, the data is sent to the SheetDB API endpoint, which then updates the connected Google Sheets file with the submitted data.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Additional Features or Customizations
+1)Form Validation: Implemented form validation to ensure all required fields are filled out correctly before submission.
+2)Submission Feedback: Added a message to indicate successful form submission without disrupting the user experience.
+3)Styling: Used Tailwind CSS for styling to ensure a modern and responsive design.
+4)Error Handling: Provided error messages for each form field to guide users in correcting any issues.
+5)Responsive Design: Ensured the form and content are displayed correctly on different devices and screen sizes.
