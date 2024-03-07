@@ -206,7 +206,7 @@ const updataGoogleSHeet = () => {
                   Name
                 </label>
                 <input
-                  className="w-full rounded border-gray-400 placeholder-px-2 text-sm text-white placeholder-gray-500 placeholder-opacity-50 "
+                  className="w-full rounded border-gray-400 placeholder-px-2 text-sm text-black placeholder-gray-500 placeholder-opacity-50 "
                   placeholder="Enter your full name"
                   type="text"
                   id="name"
@@ -225,7 +225,7 @@ const updataGoogleSHeet = () => {
                     Email
                   </label>
                   <input
-                     className="w-full rounded border-gray-400 placeholder-px-2 text-sm text-white placeholder-gray-500 placeholder-opacity-50 "
+                     className="w-full rounded border-gray-400 placeholder-px-2 text-sm text-black placeholder-gray-500 placeholder-opacity-50 "
                     placeholder="Enter your email address here"
                     type="email"
                     id="email"
@@ -244,7 +244,7 @@ const updataGoogleSHeet = () => {
                     Phone
                   </label>
                   <input
-                     className="w-full rounded border-gray-400 placeholder-px-2 text-sm text-white placeholder-gray-500 placeholder-opacity-50 "
+                     className="w-full rounded border-gray-400 placeholder-px-2 text-sm text-black placeholder-gray-500 placeholder-opacity-50 "
                     placeholder="Enter your phone number here"
                     type="tel"
                     id="phone"
@@ -262,7 +262,7 @@ const updataGoogleSHeet = () => {
                   Message
                 </label>
                 <textarea
-                   className="w-full rounded border-gray-400 placeholder-px-2 text-sm text- placblackeholder-gray-500 placeholder-opacity-50 "
+                   className="w-full rounded border-gray-400 placeholder-px-2 text-sm text-black placeholder-gray-500 placeholder-opacity-50 "
                   placeholder="Enter your message here"
                   rows="8"
                   id="message"
