@@ -4,7 +4,7 @@ const About = () => {
   return (
 <div class="grid h-screen place-content-center bg-white px-4 dark:bg-gray-900">
   <div class="text-center">
-    <img src='/Mic drop-cuate.svg' className='w-full md:w-150'></img>
+    <img src='/Mic drop-cuate.svg' className='w-full md:w-150' alt='mic-drop'></img>
     <h1 class="mt-6 text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">
      Tanisha Agrawal
     </h1>

@@ -6,12 +6,12 @@ export const Navbar = () => {
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
         <div class="md:flex md:items-center md:gap-12">
-          <img src='/logo.png' className='w-20'></img>
+          <img src='/logo.png' className='w-20' alt='nav-image'></img>
         </div>
   
-        <div class="hidden md:block">
+        <div class="">
           <nav aria-label="Global">
-            <ul class="flex items-center gap-6 text-sm">
+            <ul class="flex gap-4  xl:flex items-center xl:gap-6 text-sm  ">
               <li>
                 <a class="text-gray-500 transition hover:text-gray-500/75" href="/"> Home </a>
               </li>
@@ -36,7 +36,7 @@ export const Navbar = () => {
         </div>
   
         <div class="flex items-center gap-4">
-          <div class="sm:flex sm:gap-4">
+          <div class="hidden sm:flex sm:gap-4">
             <a
               class="rounded-md bg-purple-500 px-5 py-2.5 text-sm font-medium text-white shadow"
               href="#"

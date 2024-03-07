@@ -127,21 +127,20 @@ const updataGoogleSHeet = () => {
 }
 
   return (
-    <section className="bg-black">
-      <div className="mx-auto max-w-screen-xl px-2 py-16 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 gap-x-12 gap-y-8 lg:grid-cols-5">
-          <div className="lg:col-span-2 lg:py-0">
-            <div className="mt-4">
-              <a href="#" className="text-4xl font-bold border border-white text-white px-3 py-1 mb-10 bg-purple-600 rounded-xl">
+    <section className="bg-black font-hmm">
+      <div className="px-8 py-8 sm:px-6">
+        <div className="lg:flex justify-between xl:grid grid-cols-2 gap-6 ">
+          <div className="m-6 ">
+              <a href="#" className="text-3xl font-bold border border-white text-white px-3 py-1 mb-10 bg-purple-600 rounded-xl xl:text-4xl  xl:mb-8">
                 Get in touch
-              </a>
-              <span className='text-white text-3xl py-4 mt-6'> with us to </span>
-              <p className='text-white text-3xl mt-4'>discover the amazing world of possiblities</p>
+              </a> 
+              <span className='text-white text-xl py-4 mt-6 xl:text-3xl'> with us to discover the amazing world of possiblities </span>
+              {/* <p className='text-white text-xl mt-4 xl:text-3xl'>discover the amazing world of possiblities</p> */}
               <address className="mt-4 not-italic text-gray-300 text-small">
               Lorem ipsum dolor sit am a velit ut mauris condimentum porta. Sed auctor, justo sed fermentum euismod
               </address>
               
-            <div className="flex items-center mt-6">
+                    <div className="flex items-center mt-6">
               <div className="w-11 h-11 bg-gray-400 rounded-full flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -159,9 +158,9 @@ const updataGoogleSHeet = () => {
                 </svg>
               </div>
                   <p className="ml-4 text-sm text-white">assessli@gmail.com</p>
-                    </div>
-                    <div className="flex items-center mt-4">
-  <div className="w-11 h-11 bg-gray-400 rounded-full flex items-center justify-center">
+                       </div>
+                      <div className="flex items-center mt-4">
+                              <div className="w-11 h-11 bg-gray-400 rounded-full flex items-center justify-center">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className="h-6 w-6 text-white"
@@ -176,16 +175,17 @@ const updataGoogleSHeet = () => {
         d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3l8 5-8 5-8-5 8-5zm-1 5v4m0 0v4m0-4h2m-2 4h2m-6-9a7.5 7.5 0 0115 0v5a7.5 7.5 0 01-15 0v-5z"
       />
     </svg>
-  </div>
-  <p className="ml-4 text-sm text-white">+1 234 567 890</p>
-</div>
+                    </div>
+  <                     p className="ml-4 text-sm text-white">+1 234 567 890</p>
+                      </div>
 
-              <img className='sm:shrink-0'
+              <div className='relative z-10'>
+              <img className='w-50 '
               src="/Skateboarding-cuate.svg" alt="Contact Us" />
-            </div>
+              </div>
           </div>
 
-          <div className="fixed top-1/2 right-0 transform -translate-y-1/2 rounded-lg bg-white p-4 shadow-lg lg:col-span-4 lg:p-8 lg:col-start-2 w-1/2  m-10 mb-1000">
+          <div className=" bg-white shadow-lg lg:p-8  w-full mr-6 border-r-4 rounded-lg">
             {showSubmittedMessage && (
               <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
                 <strong className="font-bold">Success!</strong>
@@ -198,7 +198,7 @@ const updataGoogleSHeet = () => {
                 </span>
               </div>
             )}
-            <form  className="m-2" onSubmit={handleSubmit}>
+            <form  className="m-2 p-4" onSubmit={handleSubmit}>
               <div className='flex flex-col'>
               <div>
                 <h2 className='py-2 font-bold'>Name</h2>
